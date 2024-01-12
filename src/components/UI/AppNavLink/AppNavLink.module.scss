@@ -1,0 +1,26 @@
+@use "@/styles/_mixins.scss" as mixins;
+
+.link {
+  color: var(--Primary-P-50, #F5CC82);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; 
+  padding: 16px 32px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-out ;
+
+  &:hover {
+    background-color: var(--alternate-bg);
+  }
+
+  @include mixins.LaptopL {
+    font-size: 18px;
+    padding: 8px 24px;
+  }
+  
+}
+
+.active {
+  background-color: var(--secondary-text-color);
+}

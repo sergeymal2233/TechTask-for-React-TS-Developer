@@ -1,0 +1,63 @@
+@use "@/styles/_mixins.scss" as mixins;
+
+.header {
+  padding: 37px 0;
+  background-color: var(--dark-grey-bg);
+
+  @include mixins.LaptopL {
+    padding: 24px 0;
+  }
+
+  @include mixins.Laptop {
+    padding: 26px 0;
+  }
+
+  @include mixins.Tablet {
+    padding: 18px 0;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 114px;
+
+  @include mixins.LaptopL {
+    gap: 46px;
+  }
+
+  @include mixins.Laptop {
+    gap: 12px;
+  }
+}
+
+.nav-image {
+  @include mixins.LaptopL {
+    width: 100px;
+    height: 34px;
+  }
+}
+
+.user-section {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  @include mixins.Tablet {
+    gap: 8px;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @include mixins.LaptopL {
+    gap: 24px;
+  }
+
+  @include mixins.Laptop {
+    gap: 0;
+  }
+}

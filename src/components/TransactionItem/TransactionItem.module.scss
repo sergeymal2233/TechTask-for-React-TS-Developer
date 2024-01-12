@@ -1,0 +1,27 @@
+@use "@/styles/_mixins.scss" as mixins;
+.item {
+  border-radius: 8px;
+  border: 1px solid var(--Secondary-S-80, #e1dcd0);
+  background: var(--Secondary-S-100, #fdfdfd);
+  padding: 16px;
+
+  &--body {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    @include mixins.Tablet {
+      gap: 8px;
+    }
+  }
+
+  &--text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include mixins.Tablet {
+      gap: 0;
+    }
+  }
+}

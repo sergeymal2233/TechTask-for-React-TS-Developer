@@ -1,0 +1,27 @@
+@use "@/styles/_mixins.scss" as mixins;
+
+.icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: var(--surface-light-cream);
+
+  &--large {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+
+    @include mixins.Tablet {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  &--primary {
+    background-color: var(--surface-light-orange);
+  }
+
+  &--dark {
+    background-color: var(--dark-grey-bg);
+  }
+}

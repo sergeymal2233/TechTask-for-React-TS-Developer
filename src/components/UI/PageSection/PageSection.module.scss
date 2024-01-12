@@ -1,0 +1,11 @@
+@use "@/styles/_mixins.scss" as mixins;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include mixins.Laptop {
+    gap: 16px;
+  }
+}

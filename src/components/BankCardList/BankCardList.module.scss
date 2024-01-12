@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  position: relative;
+  padding: 3px;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}

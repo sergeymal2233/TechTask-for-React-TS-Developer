@@ -1,0 +1,26 @@
+@mixin active {
+  background-color: var(--surface-dark-yellow);
+  color: #fff;
+}
+
+@mixin LaptopL {
+  @media (max-width: 1440px){
+      @content;
+  }
+}
+
+@mixin Laptop {
+  @media (max-width: 1024px){
+      @content;
+  }
+}
+@mixin Tablet {
+  @media (max-width: 768px){
+      @content;
+  }
+}
+@mixin MobileS{
+  @media (max-width: 360px){
+      @content;
+  }
+}

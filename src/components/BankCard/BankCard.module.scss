@@ -1,0 +1,70 @@
+@use "@/styles/_mixins.scss" as mixins;
+
+.card {
+  background: url("@/assets/xeppt-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  min-width: 312px;
+  height: 196px;
+
+  @include mixins.Laptop {
+    min-width: 280px;
+    height: 176px;
+  }
+
+  @include mixins.Tablet {
+    min-width: 256px;
+    height: 160px;
+  }
+}
+
+.status {
+  padding: 4px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 81px;
+  height: 26px;
+}
+
+.active {
+  @include mixins.active;
+}
+
+.inactive {
+  background-color: var(--surface-light-cream);
+  color: var(--primary-dark);
+}
+
+.empty-card {
+  display: block;
+  min-width: 312px;
+  height: 196px;
+  padding-left: 21px;
+  padding-top: 27px;
+  border-radius: 10px;
+  border: 1px solid var(--Secondary-S-80, #e1dcd0);
+  background: var(--Secondary-S-90, #f8f6f1);
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  @include mixins.Laptop {
+    min-width: 280px;
+    height: 176px;
+  }
+
+  @include mixins.Tablet {
+    min-width: 256px;
+    height: 160px;
+  }
+}

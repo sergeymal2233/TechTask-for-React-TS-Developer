@@ -1,0 +1,11 @@
+@use "@/styles/_mixins.scss" as mixins;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include mixins.Tablet {
+    gap: 8px;
+  }
+}

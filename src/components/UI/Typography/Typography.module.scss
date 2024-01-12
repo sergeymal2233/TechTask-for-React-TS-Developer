@@ -1,0 +1,116 @@
+@use "@/styles/_mixins.scss" as mixins;
+
+.h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+
+  @include mixins.Tablet {
+    font-size: 16px;
+  }
+}
+
+.h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+
+  @include mixins.LaptopL {
+    font-size: 18px;
+  }
+
+  @include mixins.Laptop {
+    font-size: 24px;
+  }
+
+  @include mixins.Tablet {
+    font-size: 16px;
+  }
+}
+
+.h6 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.body {
+  font-weight: 400;
+  line-height: 150%;
+
+  @include mixins.Laptop {
+    font-size: 14px;
+  }
+}
+
+.body-2 {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.body-medium {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+
+  @include mixins.LaptopL {
+    font-size: 16px;
+  }
+}
+
+.card-main {
+  font-size: 24px;
+  font-weight: 700;
+
+  @include mixins.Laptop {
+    font-size: 20px;
+  }
+}
+
+.card-utility  {
+  line-height: 150%;
+
+  @include mixins.Tablet {
+    font-size: 12px;
+  }
+}
+
+.utility-small {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--primary-dark);
+}
+
+.link-bold {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  text-decoration-line: underline;
+}
+
+.body-large {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+
+  @include mixins.Tablet {
+    font-size: 16px;
+  }
+}
+
+.primary-color {
+  color: var(--primary-text-color);
+}
+
+.success-color {
+  color: var(--success-color);
+}
+
+.secondary-grey {
+  color: var(--secondary-grey);
+}
+
+.white {
+  color: #fff;
+}
